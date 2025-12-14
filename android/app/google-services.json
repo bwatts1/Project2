@@ -1,0 +1,124 @@
+{
+  "project_info": {
+    "project_number": "259026585807",
+    "project_id": "my-firebase-6b68b",
+    "storage_bucket": "my-firebase-6b68b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259026585807:android:ce3b8864e3eeff44d74fba",
+        "android_client_info": {
+          "package_name": "com.example.authentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtsuurNyOPV1TKTC5RwjSyVl1Z3gIVrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259026585807:android:27f1f34509084b72d74fba",
+        "android_client_info": {
+          "package_name": "com.example.bwhomework2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtsuurNyOPV1TKTC5RwjSyVl1Z3gIVrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259026585807:android:b6a626517d28c97bd74fba",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtsuurNyOPV1TKTC5RwjSyVl1Z3gIVrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259026585807:android:c622454dac78fd8dd74fba",
+        "android_client_info": {
+          "package_name": "com.example.homework2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtsuurNyOPV1TKTC5RwjSyVl1Z3gIVrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259026585807:android:c3c8f45aac455028d74fba",
+        "android_client_info": {
+          "package_name": "com.example.homework2_mad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtsuurNyOPV1TKTC5RwjSyVl1Z3gIVrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259026585807:android:3d47516d5dfc54eed74fba",
+        "android_client_info": {
+          "package_name": "com.example.notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtsuurNyOPV1TKTC5RwjSyVl1Z3gIVrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

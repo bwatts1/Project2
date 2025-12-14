@@ -1,0 +1,413 @@
+{
+   "checksum": "1fee51ec94e91a2bcfd0ebac10003a59",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13198795260235716",
+            "date_last_used": "0",
+            "guid": "e7865cdf-25a1-464a-8cb4-ca247a2db148",
+            "id": "32",
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://youtube.com/"
+         }, {
+            "date_added": "13198795260251344",
+            "date_last_used": "0",
+            "guid": "27b46ae0-40c4-42e8-9e28-3fd9475b85bd",
+            "id": "33",
+            "name": "Maps",
+            "type": "url",
+            "url": "https://maps.google.com/"
+         }, {
+            "date_added": "13198795260251344",
+            "date_last_used": "0",
+            "guid": "9c6991fd-a15f-4838-94c1-8e53ee2aa28d",
+            "id": "34",
+            "name": "News",
+            "type": "url",
+            "url": "https://news.google.com/"
+         }, {
+            "date_added": "13198795260251344",
+            "date_last_used": "0",
+            "guid": "e8943a1d-a424-4273-9608-ad2019c85516",
+            "id": "35",
+            "name": "Web Store",
+            "type": "url",
+            "url": "https://chrome.google.com/webstore"
+         }, {
+            "date_added": "13198795260251344",
+            "date_last_used": "0",
+            "guid": "712172cc-df27-41ed-b9a8-81914c0f605e",
+            "id": "36",
+            "name": "Translate",
+            "type": "url",
+            "url": "https://translate.google.com/"
+         }, {
+            "date_added": "13198795260273488",
+            "date_last_used": "13356202486263404",
+            "guid": "80f1bbba-96c7-4734-b9d8-5bd8c9c1fb76",
+            "id": "37",
+            "name": "Gmail",
+            "type": "url",
+            "url": "https://accounts.google.com/b/0/AddMailService"
+         }, {
+            "date_added": "13236892558963181",
+            "date_last_used": "0",
+            "guid": "1815235a-a332-4ecf-94c2-06ca981fc305",
+            "id": "38",
+            "name": "Booking.com",
+            "type": "url",
+            "url": "http://secure.rezserver.com/sdk/v1/LinkFwd?refid=9005&destination=booking&refclickid=webslice1819"
+         }, {
+            "date_added": "0",
+            "date_last_used": "0",
+            "guid": "adbde901-d470-4eb7-87cd-f5dc022b6c02",
+            "id": "39",
+            "name": "(1) Facebook",
+            "type": "url",
+            "url": "https://www.facebook.com/Icollectjordans/videos/pcb.1748570235210667/1748570178544006/?type=3&theater"
+         }, {
+            "children": [ {
+               "date_added": "13317873234377507",
+               "date_last_used": "0",
+               "guid": "a254057a-da0f-4ab4-8206-4805213faaad",
+               "id": "41",
+               "name": "My subscription - CSC 1301: Principles of Computer Science I",
+               "type": "url",
+               "url": "https://learn.zybooks.com/zybook/GSUCSC1301GlebovaSpring2023?selectedPanel=my-class-student"
+            }, {
+               "date_added": "13318131434399081",
+               "date_last_used": "0",
+               "guid": "6079230c-6b9c-4e54-88be-192e4a2d357c",
+               "id": "42",
+               "name": "caclulus",
+               "type": "url",
+               "url": "https://www.cengage.com/"
+            }, {
+               "date_added": "13318131446425282",
+               "date_last_used": "13324430735410973",
+               "guid": "d6528439-3a6c-4d5b-8fc2-f481a2ce681a",
+               "id": "43",
+               "name": "calculus login",
+               "type": "url",
+               "url": "https://account.cengage.com/login?SAMLRequest=fZLRSsMwFIZfpeS%2BbZKttoZ1MhzCQIfoFPEupGc12J7UnHRzb2%2FtnOiF3oZzvv%2FnO5ldvLdNtANP1mHJRMJZBGhcZbEu2cPmKi7YxXxGum1kpxZ9eME7eOuBQrQgAh%2BGtUuH1Lfg78HvrIGHu%2BuSvYTQkUpTPWwkBrDWNSTGtSmRS0dayp2WZ1khtkjrp2xdLyZZzqLlgLaow1jnm2KM6zH8AjWutsiiK%2BcNjL1KttUNAYtWy5LZSkiZF7ksOJ9ORF7wQgjBz%2FlZPoSsiHpYIQWNoWSSy0nMRSymG85VlispkqnMnln0ePIiP70MppDUUUXJeo%2FKabKkULdAKhh1v7i5VsOo6rwLzriGfZlTY6D%2FSfgfoE9u2fzkYL%2FfJ%2B416KPF0SAdhcdD3M5W4FPqdli1gPrgOl%2B%2F6epQhVn6s8L3KddD5mp56xprDp8SWx3%2BriQSMb7YKt6Oo6pH6sDYrYWKpfOvjN8fZP4B&RelayState=%252Foauth2%252Fv1%252Fauthorize%252Fredirect%253Fokta_key%253DtLjP_Y5gg_XOCzss2Df5dkcMJ7lqMW0ep3MvOAHWqgI&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=P004diQjPRgWh2rWsZTsuA%2BAVTD8L1Khij709PJC4JldLVAOo4lY3U04%2FKrQjC4EjJuby2c4wW0tokRArPemQfkeoYVAD2pHciLXqa4zu34gX1k5XWIihlHxR4CwqNOol2RUVQOfhsmfg26RfpYLtGCIdMLZhc5Ke4ea2UA5FOOYyz95ejnXdIj77yLdtN3Ue2B3o1ueT2E83YNdLpdmC6eUN9dFVx8tJNGogbvSaeTaL4y0zAQ6197SbsYRyzc91RUFwxdUpAIdiEkRLdNFxIQ8udAR8R%2Fh9yGyECj1Pe8MPfyO33duT%2BLwoRSF2bLhxOSNZtw8ZY3xCP%2FHN848Xg%3D%3D"
+            }, {
+               "date_added": "13345057831556876",
+               "date_last_used": "0",
+               "guid": "ed7d2d6c-35a4-45a3-b4df-580dc7d79c52",
+               "id": "44",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Study Information",
+               "type": "url",
+               "url": "https://gsupolisci.sona-systems.com/exp_info_participant.aspx?experiment_id=38"
+            }, {
+               "date_added": "13345157280525483",
+               "date_last_used": "0",
+               "guid": "635e4760-e01e-44b6-a7e8-1746db955af5",
+               "id": "45",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Career Opportunities: Sign In",
+               "type": "url",
+               "url": "https://career41.sapsf.com/careers?company=viacomcbsi"
+            }, {
+               "date_added": "13345159400355711",
+               "date_last_used": "0",
+               "guid": "5c399cc9-059e-4163-be4a-aa8b7e9903ae",
+               "id": "46",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Career Opportunities: Sign In",
+               "type": "url",
+               "url": "https://career4.successfactors.com/careers?company=Amtrak"
+            }, {
+               "date_added": "13353615716690241",
+               "date_last_used": "0",
+               "guid": "52ba719c-0b96-4014-ab34-6ef1636085a1",
+               "id": "47",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Problem Solving with Algorithms and Data Structures using Python — Problem Solving with Algorithms and Data Structures",
+               "type": "url",
+               "url": "https://www.openbookproject.net/books/pythonds/"
+            }, {
+               "date_added": "13371784069173424",
+               "date_last_used": "0",
+               "guid": "c3d375b5-8557-418e-b999-b5eb78dedc90",
+               "id": "48",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Instances | Oracle Cloud Infrastructure",
+               "type": "url",
+               "url": "https://cloud.oracle.com/compute/instances/ocid1.instance.oc1.iad.anuwcljtfyaifgycfbupwfhjy2aqjjlpow2gze5shsh5fk5flfmkpluqzgwa?region=us-ashburn-1"
+            }, {
+               "date_added": "13374259700264693",
+               "date_last_used": "0",
+               "guid": "e1292ee6-3420-4a85-9c22-9f0af83d2492",
+               "id": "49",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "All Opportunities - Georgia State University Scholarships",
+               "type": "url",
+               "url": "https://gsu.academicworks.com/"
+            } ],
+            "date_added": "13317873666306089",
+            "date_last_used": "0",
+            "date_modified": "13374259700264693",
+            "guid": "76ba2b84-2044-4c32-8bc0-303c9954a16e",
+            "id": "40",
+            "name": "school",
+            "type": "folder"
+         } ],
+         "date_added": "13410228258201282",
+         "date_last_used": "0",
+         "date_modified": "13236892558963181",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13195428990435135",
+                  "date_last_used": "0",
+                  "guid": "26ef69dc-dd42-45ee-a525-5750fb8b3801",
+                  "id": "8",
+                  "name": "Driversed.com",
+                  "type": "url",
+                  "url": "https://driversed.com/dashboard/course/?act=REVIEW&refID=DED001&module=M00000401&topic=T000004326"
+               } ],
+               "date_added": "13236889415035278",
+               "date_last_used": "0",
+               "date_modified": "13236889415035278",
+               "guid": "2c6974b7-540f-498f-b35f-089ee9999411",
+               "id": "7",
+               "name": "Group 1",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13202513903772845",
+                  "date_last_used": "0",
+                  "guid": "dff33da4-29db-49fd-af07-e1e480f4fa01",
+                  "id": "10",
+                  "name": "(1) One Piece Pirates Wrath - Roblox",
+                  "type": "url",
+                  "url": "https://www.roblox.com/games/2687408665/One-Piece-Pirates-Wrath"
+               }, {
+                  "date_added": "13202513903772845",
+                  "date_last_used": "0",
+                  "guid": "a7e85859-939e-45be-9db0-ea2beffbbb76",
+                  "id": "11",
+                  "name": "(1) [SLIME] Elemental Battlegrounds - Roblox",
+                  "type": "url",
+                  "url": "https://www.roblox.com/games/566399244/SLIME-Elemental-Battlegrounds"
+               }, {
+                  "date_added": "13289710640828337",
+                  "date_last_used": "0",
+                  "guid": "4f149a18-4303-43cc-896c-0e944d7eecaa",
+                  "id": "12",
+                  "name": "The _______ is a collection of wires through which data is transmitted from one part of a computer to another.",
+                  "type": "url",
+                  "url": "https://quizlet.com/444413071/ch-3-and-4-test-questions-flash-cards/"
+               }, {
+                  "date_added": "13291665257405364",
+                  "date_last_used": "0",
+                  "guid": "4a0a22bf-389d-466e-b7cd-5b6a3c983ab8",
+                  "id": "13",
+                  "name": "Question Mode: Fill in the Blank Question",
+                  "type": "url",
+                  "url": "https://learning.mheducation.com/static/awd/index.html?_t=1647190396415#/"
+               }, {
+                  "date_added": "13291957533117081",
+                  "date_last_used": "0",
+                  "guid": "9bea520b-e280-4974-981f-8a6318ca43e8",
+                  "id": "14",
+                  "name": "Tests - GRLContent",
+                  "type": "url",
+                  "url": "https://georgiastate.grlcontent.com/fundamentalsofcomp2nded/page/tests"
+               }, {
+                  "date_added": "13292626836703879",
+                  "date_last_used": "0",
+                  "guid": "eac81274-6b6f-416f-9a75-88cd10dcbed9",
+                  "id": "15",
+                  "name": "Chapter 17",
+                  "type": "url",
+                  "url": "https://quizlet.com/569684279/chapter-17-immunologic-disorders-flash-cards/"
+               }, {
+                  "date_added": "13292626892680480",
+                  "date_last_used": "0",
+                  "guid": "9f8b20df-3a02-4095-a577-46d47faad3a1",
+                  "id": "16",
+                  "name": "chapter 18 practice Flashcards | Quizlet",
+                  "type": "url",
+                  "url": "https://quizlet.com/401708091/chapter-18-practice-flash-cards/"
+               }, {
+                  "date_added": "13292626895774247",
+                  "date_last_used": "0",
+                  "guid": "849c2d53-658c-4763-9e06-608a97b8f62b",
+                  "id": "17",
+                  "name": "Micrbiology ch 18 Applications of Immune Response Flashcards | Quizlet",
+                  "type": "url",
+                  "url": "https://quizlet.com/410458310/micrbiology-ch-18-applications-of-immune-response-flash-cards/"
+               }, {
+                  "date_added": "13294630140217218",
+                  "date_last_used": "0",
+                  "guid": "fdf962e4-c370-41f2-a0f9-21ed55afbbbb",
+                  "id": "18",
+                  "name": "International Trade Flashcards | Quizlet",
+                  "type": "url",
+                  "url": "https://quizlet.com/511760984/international-trade-flash-cards/"
+               }, {
+                  "date_added": "13299384787118599",
+                  "date_last_used": "0",
+                  "guid": "dded72f5-e89f-4124-a359-a135784695f6",
+                  "id": "19",
+                  "name": "English Composition I - ENGL 1101 (Summer 2022) - Assigned | Top Hat",
+                  "type": "url",
+                  "url": "https://app.tophat.com/e/876203/assigned/"
+               } ],
+               "date_added": "13236889415035388",
+               "date_last_used": "0",
+               "date_modified": "13299384787118599",
+               "guid": "f0803cea-0237-4e7f-b727-97adb0cf0416",
+               "id": "9",
+               "name": "Group 2",
+               "type": "folder"
+            } ],
+            "date_added": "13236889415034452",
+            "date_last_used": "0",
+            "date_modified": "13236889415034452",
+            "guid": "f66e6943-65e2-4717-957c-646e0ad59c95",
+            "id": "6",
+            "name": "Tabs set aside",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13236892559000937",
+               "date_last_used": "0",
+               "guid": "16fb2ead-7637-443b-a10c-68f5a9e0143a",
+               "id": "21",
+               "name": "Accessories",
+               "type": "url",
+               "url": "http://js.redirect.hp.com/jumpstation?bd=*&c=*&locale=*_us&pf=*&s=*&tp=*&TYPE=3"
+            }, {
+               "date_added": "13236892558947560",
+               "date_last_used": "0",
+               "guid": "d7d1ae0e-4493-4228-a01b-732151c7d4e4",
+               "id": "22",
+               "name": "Booking.com",
+               "type": "url",
+               "url": "http://secure.rezserver.com/sdk/v1/LinkFwd?refid=9005&destination=booking&refclickid=iefav1819"
+            }, {
+               "date_added": "13236892559000937",
+               "date_last_used": "0",
+               "guid": "ad8733c7-92bf-41b0-987c-a24a86d6ed02",
+               "id": "23",
+               "name": "HP Store",
+               "type": "url",
+               "url": "http://js.redirect.hp.com/jumpstation?bd=*&c=*&locale=*&pf=*&s=Hpstore&tp=*&TYPE=3"
+            }, {
+               "date_added": "13236892559000937",
+               "date_last_used": "0",
+               "guid": "68ccba53-06d0-46e6-8545-94dc230779c4",
+               "id": "24",
+               "name": "Printing",
+               "type": "url",
+               "url": "http://js.redirect.hp.com/jumpstation?bd=*&c=*&locale=*&pf=*&s=printing&tp=*&TYPE=3"
+            }, {
+               "date_added": "13236892559000937",
+               "date_last_used": "0",
+               "guid": "cf5d1d25-0529-4066-bf2a-66ff128de510",
+               "id": "25",
+               "name": "Software and Driver Downloads",
+               "type": "url",
+               "url": "http://js.redirect.hp.com/jumpstation?bd=*&c=*&locale=en_us&pf=*&s=hp_support&tp=*&TYPE=3"
+            } ],
+            "date_added": "13289284576765846",
+            "date_last_used": "0",
+            "date_modified": "13289284576765846",
+            "guid": "d70c15ba-6510-4d6f-96cc-2141b66bd967",
+            "id": "20",
+            "name": "HP",
+            "type": "folder"
+         }, {
+            "children": [  ],
+            "date_added": "13303367124234732",
+            "date_last_used": "0",
+            "date_modified": "13303367124234732",
+            "guid": "7bd6cd90-8315-4ffb-bd7b-20adff532b17",
+            "id": "26",
+            "name": "Other Bookmarks",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13306036519242482",
+               "date_last_used": "0",
+               "guid": "757b11cf-d66d-480c-afbf-b52892a57340",
+               "id": "28",
+               "name": "My Course - PSYC 1101 - FALL 2022-Flemming - Macmillan Learning Achieve",
+               "type": "url",
+               "url": "https://achieve.macmillanlearning.com/courses/zrr6e7/mycourse"
+            }, {
+               "date_added": "13311720919248119",
+               "date_last_used": "0",
+               "guid": "c123de02-2b4c-46bb-8009-3fdff8c77c5f",
+               "id": "29",
+               "name": "Free eggX Answers | Unblur eggX Links Online 2022! (Homeworkify)",
+               "type": "url",
+               "url": "https://homeworkify.net/free-homework-question-answers-unblur-links/"
+            }, {
+               "date_added": "13311913908907156",
+               "date_last_used": "0",
+               "guid": "d85b5f20-4d7e-4904-be71-83f8cd293d63",
+               "id": "30",
+               "name": "LearningCurve 12c. Prosocial Relations - PSYC 1101 - FALL 2022-Flemming - Achieve",
+               "type": "url",
+               "url": "https://achieve.macmillanlearning.com/courses/2cf7a900-8e88-42a6-a86b-49d34d66aa1f/4/zrr6e7/tools/learningcurve/items/f8e01847-92da-4753-bc65-3ef9b30e09b3/assignments/psych%2Fmyers_ep12e_ach%2Flearningcurve_12c__prosocial_r_A2CC0A_ag?redirectBackToOnClose=true&emptyReadingTab=true&ngasettings=false&headerText=LearningCurve%2012c.%20Prosocial%20Relations&actualCourseId=undefined#"
+            }, {
+               "date_added": "13317873380844024",
+               "date_last_used": "0",
+               "guid": "c4ea4bda-808a-4881-87fd-7ce0ecca4afb",
+               "id": "31",
+               "name": "dashboard - enroll",
+               "type": "url",
+               "url": "https://www.cengage.com/dashboard/enroll"
+            } ],
+            "date_added": "13303367124234747",
+            "date_last_used": "0",
+            "date_modified": "13317873380844024",
+            "guid": "c7dd7a52-709a-4e10-bb00-941a3926af6e",
+            "id": "27",
+            "name": "Synced Bookmarks",
+            "type": "folder"
+         } ],
+         "date_added": "13410228258201282",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13410228258201282",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
