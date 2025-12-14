@@ -1,11 +1,10 @@
 // lib/screens/profile_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -35,41 +34,34 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   Future<void> _loadUserData() async {
     final user = FirebaseAuth.instance.currentUser;
-    if (user != null) {
-      try {
-        final userDoc = await FirebaseFirestore.instance
-            .collection('users')
-            .doc(user.uid)
-            .get();
+    if (user == null) return;
 
-        if (userDoc.exists) {
-          final data = userDoc.data();
-          setState(() {
-            _firstNameController.text = data?['firstName'] ?? '';
-            _lastNameController.text = data?['lastName'] ?? '';
-            _roleController.text = data?['role'] ?? '';
-            _isLoading = false;
-          });
-        }
-      } catch (e) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error loading profile: ${e.toString()}')),
-          );
-        }
+    try {
+      final doc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
+      if (doc.exists) {
+        final data = doc.data();
         setState(() {
+          _firstNameController.text = data?['firstName'] ?? '';
+          _lastNameController.text = data?['lastName'] ?? '';
+          _roleController.text = data?['role'] ?? '';
           _isLoading = false;
         });
       }
+    } catch (e) {
+      _showMessage('Error loading profile: $e');
+      setState(() => _isLoading = false);
     }
+  }
+
+  void _showMessage(String msg) {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
   }
 
   Future<void> _saveProfile() async {
     if (!_formKey.currentState!.validate()) return;
 
-    setState(() {
-      _isSaving = true;
-    });
+    setState(() => _isSaving = true);
 
     final user = FirebaseAuth.instance.currentUser;
     if (user != null) {
@@ -79,116 +71,62 @@ class _ProfileScreenState extends State<ProfileScreen> {
           'lastName': _lastNameController.text.trim(),
           'role': _roleController.text.trim(),
         });
-
-        if (!mounted) return;
-
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Profile updated successfully')),
-        );
+        _showMessage('Profile updated successfully');
       } catch (e) {
-        if (!mounted) return;
-
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error updating profile: ${e.toString()}')),
-        );
+        _showMessage('Error updating profile: $e');
       } finally {
-        if (mounted) {
-          setState(() {
-            _isSaving = false;
-          });
-        }
+        if (mounted) setState(() => _isSaving = false);
       }
     }
+  }
+
+  Widget _buildField(TextEditingController controller, String label, IconData icon) {
+    return TextFormField(
+      controller: controller,
+      decoration: InputDecoration(
+        labelText: label,
+        prefixIcon: Icon(icon),
+        border: const OutlineInputBorder(),
+      ),
+      validator: (value) => (value == null || value.isEmpty) ? 'Please enter your $label' : null,
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Profile'),
-      ),
+      appBar: AppBar(title: const Text('Profile')),
       body: _isLoading
-          ? Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator())
           : SingleChildScrollView(
-              padding: const EdgeInsets.all(24.0),
+              padding: const EdgeInsets.all(24),
               child: Form(
                 key: _formKey,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 50,
                       backgroundColor: Colors.blue,
-                      child: Icon(
-                        Icons.person,
-                        size: 60,
-                        color: Colors.white,
-                      ),
+                      child: Icon(Icons.person, size: 60, color: Colors.white),
                     ),
                     const SizedBox(height: 30),
-                    TextFormField(
-                      controller: _firstNameController,
-                      decoration: InputDecoration(
-                        labelText: 'First Name',
-                        prefixIcon: Icon(Icons.person),
-                        border: OutlineInputBorder(),
-                      ),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter your first name';
-                        }
-                        return null;
-                      },
-                    ),
+                    _buildField(_firstNameController, 'First Name', Icons.person),
                     const SizedBox(height: 16),
-                    TextFormField(
-                      controller: _lastNameController,
-                      decoration: InputDecoration(
-                        labelText: 'Last Name',
-                        prefixIcon: Icon(Icons.person),
-                        border: OutlineInputBorder(),
-                      ),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter your last name';
-                        }
-                        return null;
-                      },
-                    ),
+                    _buildField(_lastNameController, 'Last Name', Icons.person),
                     const SizedBox(height: 16),
-                    TextFormField(
-                      controller: _roleController,
-                      decoration: InputDecoration(
-                        labelText: 'Role',
-                        prefixIcon: Icon(Icons.work),
-                        border: OutlineInputBorder(),
-                      ),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter your role';
-                        }
-                        return null;
-                      },
-                    ),
+                    _buildField(_roleController, 'Role', Icons.work),
                     const SizedBox(height: 24),
                     ElevatedButton(
                       onPressed: _isSaving ? null : _saveProfile,
-                      style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                      ),
+                      style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(vertical: 16)),
                       child: _isSaving
-                          ? SizedBox(
+                          ? const SizedBox(
                               height: 20,
                               width: 20,
-                              child: CircularProgressIndicator(
-                                strokeWidth: 2,
-                                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                              ),
+                              child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
                             )
-                          : Text(
-                              'Save Changes',
-                              style: TextStyle(fontSize: 16),
-                            ),
+                          : const Text('Save Changes', style: TextStyle(fontSize: 16)),
                     ),
                   ],
                 ),

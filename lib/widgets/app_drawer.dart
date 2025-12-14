@@ -1,5 +1,4 @@
 // lib/widgets/app_drawer.dart
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../screens/home_screen.dart';
@@ -8,95 +7,71 @@ import '../screens/settings_screen.dart';
 import '../screens/login_screen.dart';
 
 class AppDrawer extends StatelessWidget {
-  const AppDrawer({Key? key}) : super(key: key);
+  const AppDrawer({super.key});
+
+  void _navigate(BuildContext context, Widget screen, {bool replace = false}) {
+    Navigator.of(context).pop();
+    if (replace) {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => screen));
+    } else {
+      Navigator.of(context).push(MaterialPageRoute(builder: (_) => screen));
+    }
+  }
+
+  Future<void> _logout(BuildContext context) async {
+    await FirebaseAuth.instance.signOut();
+    if (!context.mounted) return;
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const LoginScreen()),
+      (route) => false,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser;
+    final email = FirebaseAuth.instance.currentUser?.email;
 
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
+            decoration: const BoxDecoration(color: Colors.blue),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Icon(
-                  Icons.message,
-                  size: 60,
-                  color: Colors.white,
-                ),
+                const Icon(Icons.message, size: 60, color: Colors.white),
                 const SizedBox(height: 10),
-                Text(
+                const Text(
                   'Message Board',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                if (user?.email != null)
-                  Text(
-                    user!.email!,
-                    style: TextStyle(
-                      color: Colors.white70,
-                      fontSize: 14,
-                    ),
-                  ),
+                if (email != null) Text(email, style: const TextStyle(color: Colors.white70, fontSize: 14)),
               ],
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Message Boards'),
-            onTap: () {
-              Navigator.of(context).pop(); // Close drawer
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => const HomeScreen()),
-              );
-            },
+            leading: const Icon(Icons.home),
+            title: const Text('Message Boards'),
+            onTap: () => _navigate(context, const HomeScreen(), replace: true),
           ),
-          Divider(),
+          const Divider(),
           ListTile(
-            leading: Icon(Icons.person),
-            title: Text('Profile'),
-            onTap: () {
-              Navigator.of(context).pop(); // Close drawer
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const ProfileScreen()),
-              );
-            },
+            leading: const Icon(Icons.person),
+            title: const Text('Profile'),
+            onTap: () => _navigate(context, const ProfileScreen()),
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () {
-              Navigator.of(context).pop(); // Close drawer
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const SettingsScreen()),
-              );
-            },
+            leading: const Icon(Icons.settings),
+            title: const Text('Settings'),
+            onTap: () => _navigate(context, const SettingsScreen()),
           ),
-          Divider(),
+          const Divider(),
           ListTile(
-            leading: Icon(Icons.logout, color: Colors.red),
-            title: Text(
-              'Logout',
-              style: TextStyle(color: Colors.red),
-            ),
-            onTap: () async {
-              await FirebaseAuth.instance.signOut();
-              if (!context.mounted) return;
-              Navigator.of(context).pushAndRemoveUntil(
-                MaterialPageRoute(builder: (context) => const LoginScreen()),
-                (route) => false,
-              );
-            },
+            leading: const Icon(Icons.logout, color: Colors.red),
+            title: const Text('Logout', style: TextStyle(color: Colors.red)),
+            onTap: () => _logout(context),
           ),
         ],
       ),
