@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:provider/provider.dart';
 import 'services/auth_service.dart';
+import 'services/database_service.dart';
+import 'providers/cart_provider.dart';
 import 'main_wrapper.dart';
 
 void main() async {
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider<AuthService>(create: (_) => AuthService()),
+        Provider<DatabaseService>(create: (_) => DatabaseService()),
+        ChangeNotifierProvider<CartProvider>(create: (_) => CartProvider()),
       ],
       child: MaterialApp(
         title: 'The Food Runner',
