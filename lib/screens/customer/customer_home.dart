@@ -6,6 +6,7 @@ import '../../models/restaurant_model.dart';
 import '../../providers/cart_provider.dart';
 import 'restaurant_details_screen.dart';
 import 'cart_screen.dart';
+import 'order_history_screen.dart';
 
 class CustomerHome extends StatelessWidget {
   const CustomerHome({super.key});
@@ -54,6 +55,15 @@ class CustomerHome extends StatelessWidget {
                       ),
                     ),
                 ],
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.receipt_long),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => OrderHistoryScreen()),
               );
             },
           ),
